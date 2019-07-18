@@ -1,5 +1,24 @@
+body {
+  font-weight: bold;
+  font-style: italic;
+  font-family: cursive;
+}
+
+.instructions {
+  text-align: center;
+}
+
+.dynamic {
+  margin: 20px;
+}
+
+.static {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .ruby {
-     margin: 20;
+     margin: 10px;
 
     /* Size */
     width: 110px;
@@ -7,7 +26,7 @@
   }
 
   .diamond {
-     margin-top: 100;
+     margin-top: 0 auto;
 
     /* Size */
     width: 135px;
@@ -15,7 +34,7 @@
   }
 
   .sapphire {
-     margin: 20;
+     margin: 10px;
 
     /* Size */
     width: 100px;
@@ -23,9 +42,13 @@
   }
 
   .emerald {
-     margin: 20;
+     margin: 10px;
 
     /* Size */
     width: 100px;
     height: 100px;
+  }
+
+  .score {
+    margin: 20px;
   }
