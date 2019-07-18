@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Crystals Collector</title>
 </head>
 
@@ -15,40 +15,62 @@
         src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"></script>
-
     <script type="text/javascript" src="./assets/javascript/game.js"></script>
 
-    <h1>Crystal Collector</h1>
 
-    <div id="instructions">You will be given a random number at the start of the game.
-    <br>
-    There are 4 crystals below. By clicking on a crystal, you will add a specific amount of point to your total score.
-    <br>
-    You win the game by matching your total score to the random number. You lose the game if your total score goes above the ramndom number.
-    <br>
-    The value of each crystal is hidden from you until you click on it.
-    <br>
-    Each time the game starts, the game will change the value of each crystal.
+    <div class="jumbotron text-center">
+        <h1>Crystal Collector</h1>
     </div>
 
-    <div id="random-number"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 instructions">
+            A random number will be chosen at the beginning of each game. Your goal is to match the number by clicking on the 4 crystals below.
+            <br>
+            Each crystal is worth a specific number of points. Clicking on a crystal will add points to your total.
+            <br>
+            You win the game by matching your total score to the random number. You lose the game if your total score surpasses the random number.
+            <br>
+            The value of each crystal is a mystery until you click on it.
+            <br>
+            At the start of every new game, the value of the crystals will change.
+            <br>
+            Good Luck!
+            </div>
+        </div>
     
-    <div id="wins-losses"></div>
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Match This!: <span id="random-number"></span></h2>
+            </div>
+            <div class="col-sm-4">
+                <h3>Wins: <span id="wins"></span></h3>
+                <h3 class="text-left">Losses: <span id="losses"></span></h3>
+            </div>
+        </div>
 
-    <div id="crystals">
-        <img class="ruby" src=assets/images/ruby.jpg>
-        <img class="diamond" src=assets/images/diamond.jpg>
-        <img class="sapphire" src=assets/images/sapphire.jpg>
-        <img class="emerald" src=assets/images/emerald.jpg>
-    </div>
-
-
-    <div id="score"></div>
-
-
-
-
-
+        <div class="row">
+            <div class="col-sm-3">
+                <img class="ruby" src=assets/images/ruby.jpg alt="Ruby">
+            </div>
+            <div class="col-sm-3">
+                <img class="diamond" src=assets/images/diamond.jpg alt="Diamond">
+            </div>
+            <div class="col-sm-3">
+                <img class="sapphire" src=assets/images/sapphire.jpg alt="Sapphire">
+            </div>
+            <div class="col-sm-3">
+                <img class="emerald" src=assets/images/emerald.jpg alt="Emerald">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Your score: <span id="totalScore"></span></h2>
+            </div>
+        </div>
+    </div>   
+        
 
 </body>
 </html>
