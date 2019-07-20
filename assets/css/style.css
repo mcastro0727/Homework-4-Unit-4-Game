@@ -18,33 +18,25 @@ body {
 }
 
 .ruby {
-     margin: 10px;
-
-    /* Size */
+    margin: 10px;
     width: 110px;
     height: 90px;
   }
 
   .diamond {
-     margin-top: 0 auto;
-
-    /* Size */
+    margin-top: 0 auto;
     width: 135px;
     height: 150px;
   }
 
   .sapphire {
-     margin: 10px;
-
-    /* Size */
+    margin: 10px;
     width: 100px;
     height: 100px;
   }
 
   .emerald {
-     margin: 10px;
-
-    /* Size */
+    margin: 10px;
     width: 100px;
     height: 100px;
   }
